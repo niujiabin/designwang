@@ -1,0 +1,54 @@
+html,body {
+	height: 100%;
+	
+}
+
+/* div{
+	 border:1px solid #96c2f1;
+ 	 background:#eff7ff
+} */
+
+/*
+	fieldset修饰
+*/
+.hanb-fieldset {
+	border:1px solid #ccc;
+	padding:5px 1px 10px 1px;
+	margin-bottom:5px;
+	background:#EEE;
+	position:relative;
+	top:0.5em;
+	left:0.5em;
+	width:auto;
+/* 	border: 1px solid #999999;
+	padding-top:2px;
+	padding-bottom:2px; */
+	height:auto;
+	
+}
+
+.hanb-fieldset legend {
+	padding:5px 10px;
+	background-color:#4F709F;
+	color:#FFF;
+}
+
+@media only screen and (max-width: 1023px){
+	body {
+		font-size:1em;
+		background: #cc1;
+	}
+	
+}
+@media only screen and (min-width: 1024px) and (max-width: 1360px) {
+	body {
+		font-size:1.3em;
+		background: #cc3;
+	}
+}
+@media screen and (min-width: 1361px){
+	body {
+	    font-size:1.5em;
+		background: #cc5;
+	}
+}
