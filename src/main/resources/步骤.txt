@@ -1,0 +1,4 @@
+1.利用one hot encoding 进行编码
+http://blog.csdn.net/a595130080/article/details/64442800 中文
+http://scikit-learn.org/stable/modules/preprocessing.html#normalization   英文
+2。利用PCA主成分分析   进行降维     归一化处理

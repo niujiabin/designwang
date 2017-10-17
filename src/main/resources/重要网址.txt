@@ -1,0 +1,21 @@
+http://python.jobbole.com/82208/
+
+http://scikit-learn.org/stable/install.html
+
+下载所有的python相关库
+****************************http://www.lfd.uci.edu/~gohlke/pythonlibs/
+
+Python机器学习包scikit-learn安装步骤：
+1.    首先安装几个依赖包：
+pip install numpy
+pip install scipy
+pip install matplotlib (可选，用于画图的辅助包，建议安装)
+2.    再安装scikit-learn
+pip install scikit-learn
+以上，（关于python环境的搭建以及pip的安装就不再细说啦）
+
+
+http://www.lfd.uci.edu/~gohlke/pythonlibs/#scipy
+http://www.lfd.uci.edu/~gohlke/pythonlibs/#numpy
+http://www.lfd.uci.edu/~gohlke/pythonlibs/#matplotlib
+http://www.lfd.uci.edu/~gohlke/pythonlibs/#scikit-learn
