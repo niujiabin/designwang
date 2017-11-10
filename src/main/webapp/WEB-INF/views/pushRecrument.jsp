@@ -13,7 +13,7 @@
     <META HTTP-EQUIV="pragma" CONTENT="no-cache">
     <META HTTP-EQUIV="Cache-Control" CONTENT="no-cache, must-revalidate">
     <META HTTP-EQUIV="expires" CONTENT="0">
-    <script src="./static/pushRecrument.js" type="text/javascript"></script>
+
 
 </head>
 <body>
@@ -77,7 +77,7 @@
         <div class="layui-inline">
             <label class="layui-form-label">公司类型</label>
             <div class="layui-input-inline">
-                <input type="tel" name="" lay-verify="" autocomplete="off" class="layui-input">
+                <input type="text" name="" lay-verify="" autocomplete="off" class="layui-input">
             </div>
         </div>
     </div>
@@ -86,6 +86,7 @@
     <div class="layui-form-item">
         <label class="layui-form-label">职位类别</label>
         <div class="layui-input-inline">
+            <input type="text" name="" lay-verify="" autocomplete="off" class="layui-input">
         </div>
 
     </div>
@@ -105,45 +106,6 @@
     </div>
 
 </form>
+<script src="./static/pushRecrument.js" type="text/javascript"></script>
 </body>
-<script >
-    layui.use(['form', 'layedit', 'laydate'], function() {
-        var form = layui.form
-            , layer = layui.layer
-            , layedit = layui.layedit
-            , laydate = layui.laydate;
-
-        //日期
-        laydate.render({
-            elem: '#date'
-        });
-        laydate.render({
-            elem: '#date1'
-        });
-
-        //创建一个编辑器
-        var editIndex = layedit.build('LAY_demo_editor');
-
-        //监听提交
- /*       form.on('submit(demo1)', function(data){
-            layer.alert(JSON.stringify(data.field), {
-                title: '最终的提交信息'
-            })
-            return false;
-        });
-*/
-    });
- //   var  path=getRootPath();
-/*    $(function(){
-        $("#subm").on("click",function(){
-            var url  = path+"/addRecrumentInfo";
-            $.post(url,$("#rform").serialize(),function(data) {
-
-                layer.open({
-                    content: "增加成功" //注意，如果str是object，那么需要字符拼接。
-                });
-            });
-        });
-    });*/
-</script>
 </html>

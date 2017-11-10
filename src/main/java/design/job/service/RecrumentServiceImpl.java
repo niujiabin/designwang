@@ -23,8 +23,20 @@ public class RecrumentServiceImpl implements  RecrementService {
         return recrementDao.getAllRecrument();
     }
 
+    /**
+     * 修改招聘信息
+     * @param recrument
+     */
     public void updateRecrument(Recrument recrument) {
         recrementDao.updateRecrument(recrument);
+    }
+
+    /**
+     * 删除招聘信息
+     * @param recrument
+     */
+    public void deleteRecrument(Recrument recrument) {
+        recrementDao.deleteRecrument(recrument);
     }
 
     public RecrementDao getRecrementDao() {

@@ -27,4 +27,8 @@
 		</trim>
 		where id=#{id}
 	</update>
+
+	<delete id="deleteRecrument" parameterType="int">
+		delete from Recrument where id=#{id}
+	</delete>
 </mapper>

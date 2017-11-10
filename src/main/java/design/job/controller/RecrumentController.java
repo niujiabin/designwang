@@ -47,8 +47,14 @@ public class RecrumentController {
     @ResponseBody
     @RequestMapping(value="/updateRecrument")
     public String updateRecrument(Recrument recrument){
-
         recrementService.updateRecrument(recrument);
+        return "success";
+    }
+
+    @ResponseBody
+    @RequestMapping(value="/deleteRecrument")
+    public String deleteRecrument(Recrument recrument){
+        recrementService.deleteRecrument(recrument);
         return "success";
     }
 

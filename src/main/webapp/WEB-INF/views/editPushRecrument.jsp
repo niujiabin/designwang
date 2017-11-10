@@ -27,6 +27,12 @@
     </tr>
     </thead>--%>
 </table>
+<script type="text/html" id="barDemo">
+    <a class="layui-btn layui-btn-mini" lay-event="detail">查看</a>
+    <a class="layui-btn layui-btn-mini" lay-event="edit">编辑</a>
+    <a class="layui-btn layui-btn-danger layui-btn-mini" lay-event="del">删除</a>
+</script>
+
 <script src="./static/editPushRecrument.js" type="text/javascript"></script>
 <%--<script src="./static/layui/layui.js" type="text/javascript" charset="utf-8"></script>--%>
 <!-- 注意：如果你直接复制所有代码到本地，上述js路径需要改成你本地的 -->

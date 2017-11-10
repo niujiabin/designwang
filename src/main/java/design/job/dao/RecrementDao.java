@@ -14,4 +14,6 @@ public interface RecrementDao {
     List<Map<String,Object>> getAllRecrument();
 
     void updateRecrument(Recrument recrument);
+
+    void deleteRecrument(Recrument recrument);
 }
