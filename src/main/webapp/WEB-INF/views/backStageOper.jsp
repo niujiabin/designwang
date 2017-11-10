@@ -110,33 +110,19 @@
         var $ = layui.$ //重点处
             ,layer = layui.layer;
 
-        $.ajaxSetup ({
-            cache: false //关闭AJAX相应的缓存
-        });
-
         $("#pushRecrus").on("click",function(){
-           // alert("aaa");
-          //  $.ajaxSetup ({ cache: false });
             $.post(path+"/pushRecrument","random="+Math.random(),function(data){
-                //alert("aaa");
                 $("#mainLoadDiv").empty();
                 $("#mainLoadDiv").html(data);
-           //     $.ajaxSetup ({ cache: true });
+
             },"html");
         });
         $("#editRecrument").on("click",function(){
-          //  $.ajaxSetup ({ cache: false });
             $.post(path+"/editRecrument","random="+Math.random(),function(data){
-                //alert("aaaff");
                 $("#mainLoadDiv").empty();
                 $("#mainLoadDiv").html(data);
-             //   $.ajaxSetup ({ cache: true });
             },"html");
         });
-
-
-        //后面就跟你平时使用jQuery一样
-        //$('body').append('hello jquery');
     });
     function getRootPath(){
         var strPath = window.location.pathname;

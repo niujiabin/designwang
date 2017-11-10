@@ -27,7 +27,7 @@ layui.use('table', function(){
             ,{field: 'workplace', title: '工作地点', width: 120,edit:true}
             ,{field: 'companyBig', title: '公司规模', width: 120,edit:true}
             ,{field: 'companyType', title: '公司类型', width: 120,edit:true}
-            ,{field: 'companyMainDo', title: '公司行业', width: 120,edit:true}
+            ,{field: 'companyMainDo', title: '公司行业', width: 200,edit:true}
             ,{fixed: 'right', width:150, align:'center', toolbar: '#barDemo'} //这里的toolbar值是模板元素的选择器
         ]]
     });

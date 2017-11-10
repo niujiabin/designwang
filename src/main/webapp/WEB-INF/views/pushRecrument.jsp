@@ -37,7 +37,7 @@
         <div class="layui-inline">
             <label class="layui-form-label">招聘人数</label>
             <div class="layui-input-inline">
-                <input type="text" name="" lay-verify="" placeholder="请输入招聘人数" autocomplete="off" class="layui-input">
+                <input type="text" name="person" lay-verify="" placeholder="请输入招聘人数" autocomplete="off" class="layui-input">
             </div>
         </div>
 
@@ -49,14 +49,14 @@
         <div class="layui-inline">
             <label class="layui-form-label">公司名称</label>
             <div class="layui-input-inline">
-                <input type="tel" name="" lay-verify="" autocomplete="off" class="layui-input">
+                <input type="tel" name="companyName" lay-verify="" autocomplete="off" class="layui-input">
             </div>
         </div>
 
         <div class="layui-inline">
             <label class="layui-form-label">工作地点</label>
             <div class="layui-input-inline">
-                <input type="tel" name="" lay-verify="" autocomplete="off" class="layui-input">
+                <input type="tel" name="workplace" lay-verify="" autocomplete="off" class="layui-input">
             </div>
         </div>
     </div>
@@ -65,19 +65,19 @@
         <div class="layui-inline">
             <label class="layui-form-label">公司行业</label>
             <div class="layui-input-inline">
-                <input type="text" name="" lay-verify="" autocomplete="off" class="layui-input">
+                <input type="text" name="companyMainDo" lay-verify="" autocomplete="off" class="layui-input">
             </div>
         </div>
         <div class="layui-inline">
             <label class="layui-form-label">公司规模</label>
             <div class="layui-input-inline">
-                <input type="text" name="" id="" lay-verify="" placeholder="" autocomplete="off" class="layui-input">
+                <input type="text" name="companyBig" id="" lay-verify="" placeholder="" autocomplete="off" class="layui-input">
             </div>
         </div>
         <div class="layui-inline">
             <label class="layui-form-label">公司类型</label>
             <div class="layui-input-inline">
-                <input type="text" name="" lay-verify="" autocomplete="off" class="layui-input">
+                <input type="text" name="companyType" lay-verify="" autocomplete="off" class="layui-input">
             </div>
         </div>
     </div>
@@ -86,7 +86,7 @@
     <div class="layui-form-item">
         <label class="layui-form-label">职位类别</label>
         <div class="layui-input-inline">
-            <input type="text" name="" lay-verify="" autocomplete="off" class="layui-input">
+            <input type="text" name="jobType" lay-verify="" autocomplete="off" class="layui-input">
         </div>
 
     </div>
@@ -94,13 +94,13 @@
     <div class="layui-form-item layui-form-text">
         <label class="layui-form-label">职位描述</label>
         <div class="layui-input-block">
-            <textarea class="layui-textarea layui-hide" name="" lay-verify="content" id="LAY_demo_editor"></textarea>
+            <textarea class="layui-textarea layui-hide" name="" lay-verify="" id="LAY_demo_editor"></textarea>
         </div>
     </div>
 
     <div class="layui-form-item">
         <div class="layui-input-block">
-            <inpyt type="button" class="layui-btn" id="subm" >立即提交</inpyt>
+            <input type="button" class="layui-btn" id="subm" value="增加招聘信息"></input>
             <button type="reset" class="layui-btn layui-btn-primary">重置</button>
         </div>
     </div>
