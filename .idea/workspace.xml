@@ -7,11 +7,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9cbd70cd-13de-461f-992e-659eb21876fb" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../designwang/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../designwang/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../designwang/src/main/java/design/job/entity/Recrument.java" afterPath="$PROJECT_DIR$/../designwang/src/main/java/design/job/entity/Recrument.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../designwang/src/main/resources/RecrumentMapper.xml" afterPath="$PROJECT_DIR$/../designwang/src/main/resources/RecrumentMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../designwang/src/main/resources/jdbc.properties" afterPath="$PROJECT_DIR$/../designwang/src/main/resources/jdbc.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../designwang/src/main/webapp/WEB-INF/static/editPushRecrument.js" afterPath="$PROJECT_DIR$/../designwang/src/main/webapp/WEB-INF/static/editPushRecrument.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../designwang/src/main/webapp/WEB-INF/static/common.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../designwang/src/main/webapp/WEB-INF/static/hanb.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../designwang/src/main/webapp/WEB-INF/static/jquery-3.2.1.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../designwang/src/main/webapp/WEB-INF/static/jquery.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../designwang/src/main/webapp/WEB-INF/static/preIncome.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../designwang/src/main/webapp/WEB-INF/static/respond.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../designwang/src/main/webapp/WEB-INF/static/seed-min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../designwang/src/main/webapp/WEB-INF/static/zepto.min.js" afterPath="" />
     </list>
     <ignored path="$PROJECT_DIR$/../designwang/out/" />
     <ignored path="$PROJECT_DIR$/../designwang/target/" />
@@ -89,8 +92,8 @@
       <file leaf-file-name="jdbc.properties" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../designwang/src/main/resources/jdbc.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="3" column="9" lean-forward="true" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
+            <state relative-caret-position="210">
+              <caret line="7" column="9" lean-forward="true" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -139,16 +142,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="420">
               <caret line="14" column="26" lean-forward="false" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="hanb.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../designwang/src/main/webapp/WEB-INF/static/hanb.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -822,7 +815,7 @@
       <option name="presentableId" value="Default" />
       <updated>1508257487308</updated>
       <workItem from="1509030756101" duration="2562000" />
-      <workItem from="1509966620170" duration="38054000" />
+      <workItem from="1509966620170" duration="38100000" />
     </task>
     <task id="LOCAL-00001" summary="this is aa">
       <created>1508258711557</created>
@@ -852,11 +845,18 @@
       <option name="project" value="LOCAL" />
       <updated>1510294384954</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="this is aa">
+      <created>1510295888896</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1510295888896</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40616000" />
+    <option name="totallyTimeSpent" value="40662000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1101,9 +1101,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1427,8 +1425,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../designwang/src/main/resources/jdbc.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="3" column="9" lean-forward="true" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
+        <state relative-caret-position="210">
+          <caret line="7" column="9" lean-forward="true" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
           <folding />
         </state>
       </provider>
