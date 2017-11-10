@@ -4,7 +4,6 @@ import java.util.Map;
 
 import javax.annotation.Resource;
 
-import design.job.entity.Recrument;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -21,7 +20,7 @@ public class PageController {
     @RequestMapping("/login")  
     public String login(Model model) {  
         model.addAttribute("msg", "controller --> login");  
-        return "loginall";  
+        return "/loginall.jsp";
     }  
     @RequestMapping("/doLogin")
     public String  validate(

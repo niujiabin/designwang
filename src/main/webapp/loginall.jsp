@@ -7,8 +7,6 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<script src="./static/zepto.min.js" type="text/javascript"></script>
-<script src="./static/login.js" type="text/javascript"></script>
 <script src="./static/layui/layui.js" type="text/javascript"></script>
 <link href="./static/layui/css/layui.css" rel="stylesheet">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">  
@@ -46,7 +44,7 @@ layui.use(['layer', 'form'], function(){
   <div class="layui-colla-item">
     <h2 class="layui-colla-title">登陆</h2>
      <div class="layui-colla-content layui-show">
-			<form class="layui-form" action="doLogin" method="post">
+			<form class="layui-form" action="goBackStage" method="post">
 			     <!-- 用户名 -->
 				  <div class="layui-form-item">
 				   	 <label class="layui-form-label">用户名</label>
