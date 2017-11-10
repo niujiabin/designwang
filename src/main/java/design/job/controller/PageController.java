@@ -4,6 +4,7 @@ import java.util.Map;
 
 import javax.annotation.Resource;
 
+import design.job.entity.Recrument;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -23,7 +24,7 @@ public class PageController {
         return "loginall";  
     }  
     @RequestMapping("/doLogin")
-    public String validate(
+    public String  validate(
     		@RequestParam("username") String username,
     		@RequestParam("password") String password,
     		@RequestParam("usertype") String usertype,
@@ -31,7 +32,18 @@ public class PageController {
     	//登录成功 进入主界面
     	return "main";
     }
-    
+    //进入到最终后台主界面
+    @RequestMapping("/goBackStage")
+    public String goBackStage(){
+        return "backStageOper";
+    }
+    @RequestMapping("/pushRecrument")
+    public String pushRecrument(){
+        return "pushRecrument";
+    }
+
+
+
     @ResponseBody
     @RequestMapping("/queryAllStudent")
     public List<Map<String, Object>> loadAllStudent(){

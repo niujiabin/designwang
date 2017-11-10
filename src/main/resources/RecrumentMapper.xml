@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="design.job.dao.RecrementDao">
+	<insert id="addRecrumentInfo" parameterType="design.job.entity.Recrument" useGeneratedKeys="true" keyProperty="id" >
+		INSERT  INTO  Recrument(jobName) VALUES (#{jobName})
+	</insert>
+
+	<select id="getAllRecrument"  resultType="java.util.Map">
+		select * from Recrument
+	</select>
+
+	<update id="updateRecrument"  parameterType="design.job.entity.Recrument">
+		update Recrument
+		<trim prefix="set" suffixOverrides=",">
+			<if test="jobName!=null">jobName=#{jobName},</if>
+
+		</trim>
+		where id=#{id}
+	</update>
+</mapper>

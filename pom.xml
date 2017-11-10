@@ -231,7 +231,7 @@
 
     <artifactId>spring-context</artifactId>
 
-    <version>4.3.10.RELEASE</version>
+    <version>4.3.1.RELEASE</version>
 
   </dependency>
 
@@ -390,7 +390,40 @@
     <version>4.3.1.RELEASE</version>
 
   </dependency>
+    <dependency>
 
+      <groupId>org.springframework</groupId>
+
+      <artifactId>spring-instrument</artifactId>
+
+      <version>4.3.1.RELEASE</version>
+
+    </dependency>
+    <dependency>
+
+      <groupId>org.springframework</groupId>
+
+      <artifactId>spring-aspects</artifactId>
+
+      <version>4.3.1.RELEASE</version>
+
+    </dependency>
+    <dependency>
+
+      <groupId>org.springframework</groupId>
+
+      <artifactId>spring-test</artifactId>
+
+      <version>4.3.1.RELEASE</version>
+
+    </dependency>
+
+    <!-- https://mvnrepository.com/artifact/org.apache.commons/commons-dbcp2 -->
+    <dependency>
+      <groupId>org.apache.commons</groupId>
+      <artifactId>commons-dbcp2</artifactId>
+      <version>2.1.1</version>
+    </dependency>
 
   </dependencies>
   <build>
