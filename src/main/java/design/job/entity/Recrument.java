@@ -11,6 +11,8 @@ public class Recrument {
 
     public String companyName;
 
+    public String companyType;
+
     public String companyBig;
 
     public String jobType;
@@ -19,18 +21,24 @@ public class Recrument {
 
     public String person;
 
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
     public String workplace;
 
     public String companyMainDo;
 
+    public String getCompanyType() {
+        return companyType;
+    }
+
+    public void setCompanyType(String companyType) {
+        this.companyType = companyType;
+    }
+
+    public int getId() {
+        return id;
+    }
+    public void setId(int id) {
+        this.id = id;
+    }
     public String getCompanyName() {
         return companyName;
     }

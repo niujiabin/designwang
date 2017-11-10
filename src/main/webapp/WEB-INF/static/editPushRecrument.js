@@ -19,7 +19,15 @@ layui.use('table', function(){
         cols:  [[ //标题栏
             //{edit:'test3'},
             {field: 'id', title: 'ID', width: 80}
-            ,{field: 'jobName', title: '岗位名称', width: 120,edit:true}
+            ,{field: 'jobName', title: '职位名称', width: 120,edit:true}
+            ,{field: 'companyName', title: '公司名称', width: 120,edit:true}
+            ,{field: 'jobInfo', title: '职位描述', width: 120,edit:true}
+            ,{field: 'jobType', title: '职位类别', width: 120,edit:true}
+            ,{field: 'person', title: '招聘人数', width: 120,edit:true}
+            ,{field: 'workplace', title: '工作地点', width: 120,edit:true}
+            ,{field: 'companyBig', title: '公司规模', width: 120,edit:true}
+            ,{field: 'companyType', title: '公司类型', width: 120,edit:true}
+            ,{field: 'companyMainDo', title: '公司行业', width: 120,edit:true}
         ]]
     });
 

@@ -16,7 +16,14 @@
 		update Recrument
 		<trim prefix="set" suffixOverrides=",">
 			<if test="jobName!=null">jobName=#{jobName},</if>
-
+			<if test="companyName!=null">companyName=#{companyName},</if>
+			<if test="companyType!=null">companyType=#{companyType},</if>
+			<if test="companyBig!=null">companyBig=#{companyBig},</if>
+			<if test="jobType!=null">jobType=#{jobType},</if>
+			<if test="jobInfo!=null">jobInfo=#{jobInfo},</if>
+			<if test="person!=null">person=#{person},</if>
+			<if test="workplace!=null">workplace=#{workplace},</if>
+			<if test="companyMainDo!=null">companyMainDo=#{companyMainDo},</if>
 		</trim>
 		where id=#{id}
 	</update>
