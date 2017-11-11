@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="design.job.dao.SubjectDao">
+	<insert id="addSubject" parameterType="design.job.entity.Subject" useGeneratedKeys="true" keyProperty="id" >
+		INSERT  INTO
+		subject(name)
+		VALUES
+		(#{name})
+	</insert>
+
+	<select id="queryAllSubject"  resultType="java.util.Map">
+		select * from subject
+	</select>
+
+<update id="updateSubject"  parameterType="design.job.entity.Subject">
+		update subject
+		<trim prefix="set" suffixOverrides=",">
+			<if test="name!=null">name=#{name},</if>
+		</trim>
+		where id=#{id}
+	</update>
+
+	<delete id="deleteSSubject" parameterType="int">
+		delete from subject where id=#{id}
+	</delete>
+</mapper>

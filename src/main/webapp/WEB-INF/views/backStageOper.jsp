@@ -67,7 +67,7 @@
                     <a href="javascript:;">学校信息管理</a>
                     <dl class="layui-nav-child">
                         <dd><a href="javascript:;">审核招聘信息</a></dd>
-                        <dd><a href="javascript:;">科目管理</a></dd>
+                        <dd><a href="javascript:;" id="editSubject">科目管理</a></dd>
                         <dd><a href="javascript:;">成绩管理</a></dd>
                         <dd><a href="javascript:;">就业分析</a></dd>
                     </dl>
@@ -119,6 +119,15 @@
         });
         $("#editRecrument").on("click",function(){
             $.post(path+"/editRecrument","random="+Math.random(),function(data){
+                $("#mainLoadDiv").empty();
+                $("#mainLoadDiv").html(data);
+            },"html");
+        });
+        /**
+         * 科目管理
+         */
+        $("#editSubject ").on("click",function(){
+            $.post(path+"/editSubject","random="+Math.random(),function(data){
                 $("#mainLoadDiv").empty();
                 $("#mainLoadDiv").html(data);
             },"html");

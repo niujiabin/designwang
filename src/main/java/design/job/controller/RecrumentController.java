@@ -32,10 +32,10 @@ public class RecrumentController {
 
     @ResponseBody
     @RequestMapping(value="/recrumentList")
-    public RecrumentTable recrumentList(Recrument recrument){
+    public JsonResult recrumentList(Recrument recrument){
 
        List<Map<String,Object>> ls =  recrementService.queryRecrementInfoList(recrument);
-        RecrumentTable tb = new RecrumentTable();
+        JsonResult tb = new JsonResult();
         tb.setCode("0");
         tb.setMsg("");
         tb.setCount(ls.size());
