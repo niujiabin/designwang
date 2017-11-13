@@ -11,23 +11,25 @@ import design.job.dao.StudentDao;
 import design.job.entity.Student;
 
 @Service("studentService")
-public class StudentServiceImpl implements IStudentService{
+public class StudentServiceImpl implements StudentService{
 
 	@Resource
 	private StudentDao studentDao;
-	
 
-	public Student getStudent(int id) {
-		// TODO Auto-generated method stub
-		return studentDao.getStudent(id);
+
+	public void addStudent(Student student) {
+		studentDao.addStudent(student);
 	}
 
-
-	public List<Map<String,Object>> getAllStudent() {
-		// TODO Auto-generated method stub
-		return studentDao.getAllStudent();
+	public void deleteStudent(Student student) {
+	studentDao.deleteSStudent(student);
 	}
 
-	
-	
+	public List<Map<String, Object>> queryAllStudent(Student student) {
+		return studentDao.queryAllStudent(student);
+	}
+
+	public void updateStudent(Student student) {
+		studentDao.updateStudent(student);
+	}
 }

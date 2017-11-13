@@ -68,6 +68,7 @@
                     <dl class="layui-nav-child">
                         <dd><a href="javascript:;">审核招聘信息</a></dd>
                         <dd><a href="javascript:;" id="editSubject">科目管理</a></dd>
+                        <dd><a href="javascript:;" id="editStudent">学生管理</a></dd>
                         <dd><a href="javascript:;">成绩管理</a></dd>
                         <dd><a href="javascript:;">就业分析</a></dd>
                     </dl>
@@ -126,12 +127,22 @@
         /**
          * 科目管理
          */
-        $("#editSubject ").on("click",function(){
+        $("#editSubject").on("click",function(){
+            $.post(path+"/editStudent","random="+Math.random(),function(data){
+                $("#mainLoadDiv").empty();
+                $("#mainLoadDiv").html(data);
+            },"html");
+        });
+        /**
+         * 学生管理
+         */
+        $("#editStudent").on("click",function(){
             $.post(path+"/editSubject","random="+Math.random(),function(data){
                 $("#mainLoadDiv").empty();
                 $("#mainLoadDiv").html(data);
             },"html");
         });
+
     });
     function getRootPath(){
         var strPath = window.location.pathname;

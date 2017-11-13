@@ -4,12 +4,26 @@
 "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <mapper namespace="design.job.dao.StudentDao">
-	<select id="getStudent" parameterType="int" resultType="design.job.entity.Student">
-		select * from student where id=#{id}
+	<insert id="addStudent" parameterType="design.job.entity.Student" useGeneratedKeys="true" keyProperty="id" >
+		INSERT  INTO
+		student(name)
+		VALUES
+		(#{name})
+	</insert>
+
+	<select id="queryAllStudent"  resultType="java.util.Map">
+		select * from student
 	</select>
-	
-	<select id="getAllStudent"  resultType="java.util.Map">
-		select * from student 
-	</select>
-	
+
+<update id="updateStudent"  parameterType="design.job.entity.Student">
+		update student
+		<trim prefix="set" suffixOverrides=",">
+			<if test="name!=null">name=#{name},</if>
+		</trim>
+		where id=#{id}
+	</update>
+
+	<delete id="deleteSStudent" parameterType="int">
+		delete from student where id=#{id}
+	</delete>
 </mapper>
