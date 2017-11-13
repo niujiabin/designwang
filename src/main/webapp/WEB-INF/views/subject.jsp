@@ -21,7 +21,7 @@
 <table class="layui-table" id="subject" <%--lay-data="{height:313, url:'/Design/recrumentList', page:true, id:'test3'}"--%> lay-filter="subject1">
 
 </table>
-
+<button class="layui-btn layui-btn-normal" id="addsubject">增加科目</button>
 <script type="text/html" id="subjectbar">
     <a class="layui-btn layui-btn-mini" lay-event="detail">查看</a>
     <a class="layui-btn layui-btn-mini" lay-event="edit">编辑</a>

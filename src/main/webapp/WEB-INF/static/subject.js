@@ -1,12 +1,28 @@
 var $;
-layui.use(['jquery', 'layer'], function() {
+layui.use(['jquery', 'layer','table'], function() {
      $ = layui.$ //重点处
         , layer = layui.layer;
 
-
-
-});
-layui.use('table', function(){
+    /**
+     * 添加按钮事件
+     */
+    $("#addsubject").on("click",function(data){
+         //默认prompt
+         layer.prompt(function(val, index){
+             //subject添加至数据库
+             var postData="name="+val;
+             $.post("/Design/addSubject",postData,function(data){
+                 layer.msg('增加的科目'+val);
+                 layer.close(index);
+                 //刷新列表   重新渲染列表数据
+                 table.reload('subject1', {
+                     url:'/Design/subjectList'
+                     ,where: {} //设定异步数据接口的额外参数
+                     //,height: 300
+                 });
+             });
+         });
+     });
     var table = layui.table;
     //执行渲染
     table.render({
@@ -19,23 +35,23 @@ layui.use('table', function(){
         cols:  [[ //标题栏
             //{edit:'test3'},
             {field: 'id', title: 'ID', width: 80}
-            ,{field: 'name', title: '科目名称', width: 120,edit:true}
+            ,{field: 'name', title: '科目名称', width: 200,edit:true}
             ,{fixed: 'right', width:150, align:'center', toolbar: '#subjectbar'} //这里的toolbar值是模板元素的选择器
         ]]
     });
 
     //监听单元格编辑
-   table.on('edit(subject1)', function(obj){
+    table.on('edit(subject1)', function(obj){
         var value = obj.value //得到修改后的值
             ,dataTd = obj.data //得到所在行所有键值
             ,field = obj.field; //得到字段
 
 
-       //直接更改字段
-      var postData="id="+dataTd.id+"&"+field+"="+value;
-       $.post("/Design/updateSubject",postData,function(data){
-           layer.msg('[ID: '+ dataTd.id +'] ' + field + ' 字段更改为：'+ value);
-       });
+        //直接更改字段
+        var postData="id="+dataTd.id+"&"+field+"="+value;
+        $.post("/Design/updateSubject",postData,function(data){
+            layer.msg('[ID: '+ dataTd.id +'] ' + field + ' 字段更改为：'+ value);
+        });
 
     });
 

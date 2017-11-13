@@ -37,11 +37,26 @@ public class SubjectController {
         return  tb;
     }
 
+    /**
+     * update subject
+     * @param subject
+     * @return
+     */
     @ResponseBody
     @RequestMapping(value="/updateSubject",method = RequestMethod.POST)
     public String updateSubject(Subject subject){
 
         this.subjectService.updateSubject(subject);
+        return "success";
+    }
+
+    /**
+     * addsubject
+     */
+    @ResponseBody
+    @RequestMapping(value="/addSubject",method = RequestMethod.POST)
+    public String addSubject(Subject subject){
+        this.subjectService.addSubject(subject);
         return "success";
     }
 
