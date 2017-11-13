@@ -43,9 +43,9 @@ public class PageController {
 
 
 
-    @ResponseBody
+/*    @ResponseBody
     @RequestMapping("/queryAllStudent")
     public List<Map<String, Object>> loadAllStudent(){
     	return studentServiceImpl.getAllStudent();
-    }
+    }*/
 }
