@@ -86,10 +86,6 @@
     </div>
 
     <div class="layui-body"  id="mainLoadDiv">
-        <!-- 内容主体区域 -->
-        <%--<div style="padding: 15px;">内容主体区域</div>--%>
-        <table class="layui-table" id="a" <%--lay-data="{height:313, url:'/Design/recrumentList', page:true, id:'test3'}"--%> lay-filter="test3">
-        </table>
     </div>
 
     <div class="layui-footer">
@@ -101,15 +97,19 @@
 <script>
     var  path=getRootPath();
     //JavaScript代码区域
-    layui.use('element', function(){
-        var element = layui.element;
 
-
-    });
     //主动加载jquery模块
-    layui.use(['jquery', 'layer'], function(){
-        var $ = layui.$ //重点处
-            ,layer = layui.layer;
+    var $;
+    var table;
+    var form;
+
+    layui.use(['element','jquery', 'layer','table','form'], function() {
+        $ = layui.$ //重点处
+            , layer = layui.layer,
+            table = layui.table,
+            form = layui.form;
+
+        //var form = layui.form;
 
         $("#pushRecrus").on("click",function(){
             $.post(path+"/pushRecrument","random="+Math.random(),function(data){

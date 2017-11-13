@@ -1,5 +1,5 @@
 var $;
-layui.use(['jquery', 'layer','table'], function() {
+layui.use(['jquery', 'layer','table','form'], function() {
      $ = layui.$ //重点处
         , layer = layui.layer;
 
@@ -11,12 +11,12 @@ layui.use(['jquery', 'layer','table'], function() {
          layer.prompt(function(val, index){
              //subject添加至数据库
              var postData="name="+val;
-             $.post("/Design/addSubject",postData,function(data){
+             $.post(path+"/addSubject",postData,function(data){
                  layer.msg('增加的科目'+val);
                  layer.close(index);
                  //刷新列表   重新渲染列表数据
                  table.reload('subject1', {
-                     url:'/Design/subjectList'
+                     url:path+'/subjectList'
                      ,where: {} //设定异步数据接口的额外参数
                      //,height: 300
                  });
@@ -27,7 +27,7 @@ layui.use(['jquery', 'layer','table'], function() {
     //执行渲染
     table.render({
         elem: '#subject', //指定原始表格元素选择器（推荐id选择器）
-        url:'/Design/subjectList',
+        url:path+'/subjectList',
         page:true,
         id:'subject1',
         height: 500, //容器高度
@@ -49,7 +49,7 @@ layui.use(['jquery', 'layer','table'], function() {
 
         //直接更改字段
         var postData="id="+dataTd.id+"&"+field+"="+value;
-        $.post("/Design/updateSubject",postData,function(data){
+        $.post(path+"/updateSubject",postData,function(data){
             layer.msg('[ID: '+ dataTd.id +'] ' + field + ' 字段更改为：'+ value);
         });
 
@@ -59,7 +59,7 @@ layui.use(['jquery', 'layer','table'], function() {
      * 监听工具条
      */
     //监听工具条
-    table.on('tool(test3)', function(obj){ //注：tool是工具条事件名，test是table原始容器的属性 lay-filter="对应的值"
+    table.on('tool(subject1)', function(obj){ //注：tool是工具条事件名，test是table原始容器的属性 lay-filter="对应的值"
         var data = obj.data; //获得当前行数据
         var layEvent = obj.event; //获得 lay-event 对应的值
         var tr = obj.tr; //获得当前行 tr 的DOM对象
@@ -72,7 +72,7 @@ layui.use(['jquery', 'layer','table'], function() {
                 layer.close(index);
                 //向服务端发送删除指令
                 var postData="id="+data.id;
-                $.post("/Design/deleteRecrument",postData,function(d){
+                $.post(path+"/deleteSubject",postData,function(d){
                     layer.msg('[ID: '+ data.id +'] ' + '已删除');
                 });
 

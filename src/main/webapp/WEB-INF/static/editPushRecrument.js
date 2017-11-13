@@ -11,7 +11,7 @@ layui.use('table', function(){
     //执行渲染
     table.render({
         elem: '#a', //指定原始表格元素选择器（推荐id选择器）
-        url:'/Design/recrumentList',
+        url:path+'/recrumentList',
         page:true,
         id:'test3',
         height: 500, //容器高度
@@ -40,7 +40,7 @@ layui.use('table', function(){
 
        //直接更改字段
       var postData="id="+dataTd.id+"&"+field+"="+value;
-       $.post("/Design/updateRecrument",postData,function(data){
+       $.post(path+"/updateRecrument",postData,function(data){
            layer.msg('[ID: '+ dataTd.id +'] ' + field + ' 字段更改为：'+ value);
        });
 

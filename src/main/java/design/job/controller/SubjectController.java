@@ -60,4 +60,11 @@ public class SubjectController {
         return "success";
     }
 
+    @ResponseBody
+    @RequestMapping(value="/deleteSubject",method = RequestMethod.POST)
+    public String deleteSubject(Subject subject){
+        this.subjectService.deleteSubject(subject);
+        return "success";
+    }
+
 }

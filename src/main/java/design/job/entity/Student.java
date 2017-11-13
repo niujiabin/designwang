@@ -4,6 +4,7 @@ public class Student {
 	private String username;
 	private String password;
 	private String name;
+	private String sex;
 	public Integer getId() {
 		return id;
 	}
@@ -27,5 +28,13 @@ public class Student {
 	}
 	public void setName(String name) {
 		this.name = name;
+	}
+
+	public String getSex() {
+		return sex;
+	}
+
+	public void setSex(String sex) {
+		this.sex = sex;
 	}
 }

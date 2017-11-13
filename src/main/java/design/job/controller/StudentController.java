@@ -58,5 +58,10 @@ public class StudentController {
         this.studentService.addStudent(student);
         return "success";
     }
-
+    @ResponseBody
+    @RequestMapping(value="/deleteStudent",method = RequestMethod.POST)
+    public String deleteStudent(Student student){
+        this.studentService.deleteStudent(student);
+        return "success";
+    }
 }
