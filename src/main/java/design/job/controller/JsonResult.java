@@ -7,6 +7,8 @@ public class JsonResult {
 
 
 
+
+
     public String code;
 
     public String msg;
