@@ -31,11 +31,21 @@
                  });
              });*/
      });
+
+    /**
+     * 确定增加按钮
+     */
+    $("#addConfirm").on("click",function () {
+
+        var postData = $("#studentInfoForm").serialize();
+        var url = path +"/addStudent";
+    });
+
     var table = layui.table;
     //执行渲染
     table.render({
         elem: '#student', //指定原始表格元素选择器（推荐id选择器）
-        url:'/Design/studentList',
+        url:path+'/studentList',
         page:true,
         id:'student1',
         height: 500, //容器高度
@@ -59,7 +69,7 @@
 
         //直接更改字段
         var postData="id="+dataTd.id+"&"+field+"="+value;
-        $.post("/Design/updateStudent",postData,function(data){
+        $.post(path+"/updateStudent",postData,function(data){
             layer.msg('[ID: '+ dataTd.id +'] ' + field + ' 字段更改为：'+ value);
         });
 
