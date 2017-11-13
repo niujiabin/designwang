@@ -8,11 +8,7 @@
   <component name="ChangeListManager">
     <list default="true" id="9cbd70cd-13de-461f-992e-659eb21876fb" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../designwang/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../designwang/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../designwang/src/main/java/design/job/entity/Student.java" afterPath="$PROJECT_DIR$/../designwang/src/main/java/design/job/entity/Student.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../designwang/src/main/resources/StudentMapper.xml" afterPath="$PROJECT_DIR$/../designwang/src/main/resources/StudentMapper.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../designwang/src/main/webapp/WEB-INF/static/student.js" afterPath="$PROJECT_DIR$/../designwang/src/main/webapp/WEB-INF/static/student.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../designwang/src/main/webapp/WEB-INF/views/backStageOper.jsp" afterPath="$PROJECT_DIR$/../designwang/src/main/webapp/WEB-INF/views/backStageOper.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../designwang/src/main/webapp/WEB-INF/views/student.jsp" afterPath="$PROJECT_DIR$/../designwang/src/main/webapp/WEB-INF/views/student.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/../designwang/out/" />
     <ignored path="$PROJECT_DIR$/../designwang/target/" />
@@ -76,11 +72,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="student.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="student.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../designwang/src/main/webapp/WEB-INF/static/student.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+            <state relative-caret-position="390">
+              <caret line="28" column="28" lean-forward="false" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -103,14 +99,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Student.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Student.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../designwang/src/main/java/design/job/entity/Student.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="32" column="28" lean-forward="false" selection-start-line="32" selection-start-column="28" selection-end-line="32" selection-end-column="28" />
+            <state relative-caret-position="390">
+              <caret line="27" column="5" lean-forward="true" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
               <folding>
                 <element signature="e#595#596#0" expanded="true" />
                 <element signature="e#618#619#0" expanded="true" />
+                <element signature="e#645#646#0" expanded="true" />
                 <element signature="e#662#663#0" expanded="true" />
                 <element signature="e#697#698#0" expanded="true" />
                 <element signature="e#718#719#0" expanded="true" />
@@ -240,10 +237,10 @@
         <option value="$PROJECT_DIR$/../designwang/src/main/webapp/WEB-INF/static/subject.js" />
         <option value="$PROJECT_DIR$/../designwang/src/main/webapp/WEB-INF/static/editPushRecrument.js" />
         <option value="$PROJECT_DIR$/../designwang/src/main/webapp/WEB-INF/views/backStageOper.jsp" />
-        <option value="$PROJECT_DIR$/../designwang/src/main/webapp/WEB-INF/static/student.js" />
         <option value="$PROJECT_DIR$/../designwang/src/main/webapp/WEB-INF/views/student.jsp" />
         <option value="$PROJECT_DIR$/../designwang/src/main/resources/StudentMapper.xml" />
         <option value="$PROJECT_DIR$/../designwang/src/main/java/design/job/entity/Student.java" />
+        <option value="$PROJECT_DIR$/../designwang/src/main/webapp/WEB-INF/static/student.js" />
       </list>
     </option>
   </component>
@@ -857,7 +854,7 @@
       <workItem from="1509030756101" duration="2562000" />
       <workItem from="1509966620170" duration="46450000" />
       <workItem from="1510380447560" duration="19348000" />
-      <workItem from="1510552323169" duration="14507000" />
+      <workItem from="1510552323169" duration="14790000" />
     </task>
     <task id="LOCAL-00001" summary="this is aa">
       <created>1508258711557</created>
@@ -964,11 +961,18 @@
       <option name="project" value="LOCAL" />
       <updated>1510565620738</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="学生管理">
+      <created>1510567195479</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1510567195479</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="82867000" />
+    <option name="totallyTimeSpent" value="83150000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -983,7 +987,7 @@
     <frame x="-9" y="-9" width="1938" height="1098" extended-state="6" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16271552" sideWeight="0.2081545" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19935344" sideWeight="0.21137339" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40522876" sideWeight="0.49803922" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18956743" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -994,12 +998,12 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32897604" sideWeight="0.49803922" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24568966" sideWeight="0.40718883" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24568966" sideWeight="0.4055794" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32897604" sideWeight="0.49803922" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16271552" sideWeight="0.7918455" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19935344" sideWeight="0.7886266" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41702586" sideWeight="0.57027894" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32897604" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41487068" sideWeight="0.49570817" order="7" side_tool="false" content_ui="tabs" />
@@ -1428,14 +1432,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../designwang/src/main/webapp/WEB-INF/static/student.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../designwang/src/main/webapp/WEB-INF/views/student.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="104">
@@ -1485,15 +1481,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../designwang/src/main/java/design/job/entity/Student.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="32" column="28" lean-forward="false" selection-start-line="32" selection-start-column="28" selection-end-line="32" selection-end-column="28" />
+        <state relative-caret-position="390">
+          <caret line="27" column="5" lean-forward="true" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
           <folding>
             <element signature="e#595#596#0" expanded="true" />
             <element signature="e#618#619#0" expanded="true" />
+            <element signature="e#645#646#0" expanded="true" />
             <element signature="e#662#663#0" expanded="true" />
             <element signature="e#697#698#0" expanded="true" />
             <element signature="e#718#719#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../designwang/src/main/webapp/WEB-INF/static/student.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="28" column="28" lean-forward="false" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="28" />
+          <folding />
         </state>
       </provider>
     </entry>

@@ -1,5 +1,6 @@
 
 
+    var layerindexstudent;
 
     /**
      * 确定增加按钮   因为这个按钮是后添加进去的 所以需要绑定
@@ -9,7 +10,7 @@
         var url = path +"/addStudent";
         $.post(url,postData,function(data){
             layer.msg('增加学生成功');
-            layer.close(index);
+            layer.close(layerindexstudent);
             //刷新列表   重新渲染列表数据
             table.reload('student1', {
                 url:path+'/studentList'
@@ -25,7 +26,7 @@
     $("#addstudent").on("click",function(data){
          //默认prompt
         //$("#sudentinfo").show();
-        layer.open({
+        layerindexstudent = layer.open({
             type: 1,
             shade: 0,
             area: '500px;',
