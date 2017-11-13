@@ -1,5 +1,5 @@
 var $;
-layui.use(['jquery', 'layer','table'], function() {
+layui.use(['jquery', 'layer','table','form'], function() {
      $ = layui.$ //重点处
         , layer = layui.layer;
 
@@ -72,7 +72,7 @@ layui.use(['jquery', 'layer','table'], function() {
                 layer.close(index);
                 //向服务端发送删除指令
                 var postData="id="+data.id;
-                $.post("/Design/deleteRecrument",postData,function(d){
+                $.post("/Design/deleteSubject",postData,function(d){
                     layer.msg('[ID: '+ data.id +'] ' + '已删除');
                 });
 

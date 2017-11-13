@@ -12,23 +12,63 @@
     <META HTTP-EQUIV="pragma" CONTENT="no-cache">
     <META HTTP-EQUIV="Cache-Control" CONTENT="no-cache, must-revalidate">
     <META HTTP-EQUIV="expires" CONTENT="0">
-
    <%-- <link href="./static/layui/css/layui.css" rel="stylesheet">--%>
     <!-- 注意：如果你直接复制所有代码到本地，上述css路径需要改成你本地的 -->
 </head>
 <body>
-
-<table class="layui-table" id="subject" <%--lay-data="{height:313, url:'/Design/recrumentList', page:true, id:'test3'}"--%> lay-filter="subject1">
-
+<table class="layui-table" id="student" <%--lay-data="{height:313, url:'/Design/recrumentList', page:true, id:'test3'}"--%> lay-filter="student1">
 </table>
-<button class="layui-btn layui-btn-normal" id="addsubject">增加科目</button>
-<script type="text/html" id="subjectbar">
+<button class="layui-btn layui-btn-normal" id="addstudent">增加学生</button>
+<script type="text/html" id="studentbar">
     <a class="layui-btn layui-btn-mini" lay-event="detail">查看</a>
     <a class="layui-btn layui-btn-mini" lay-event="edit">编辑</a>
     <a class="layui-btn layui-btn-danger layui-btn-mini" lay-event="del">删除</a>
 </script>
 
-<script src="./static/subject.js" type="text/javascript"></script>
+<div class="layui-collapse layui-col-xs12 layui-col-md3 layui-col-md-offset4 " id="sudentinfo"  style="margin-top:200px;border:1px solid #ccc;display: none;">
+    <div class="layui-colla-item">
+        <h2 class="layui-colla-title">增加学生信息</h2>
+        <div class="layui-colla-content layui-show">
+            <form class="layui-form" id="studentInfoForm" method="post">
+                <!-- 用户名 -->
+                <div class="layui-form-item">
+                    <label class="layui-form-label">用户名</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="username" lay-verify="phone" autocomplete="off" placeholder="请输入用户名" class="layui-input" style="width:150px;">
+                    </div>
+                </div>
+                <!-- 密码 -->
+                <div class="layui-form-item">
+                    <label class="layui-form-label">密码</label>
+                    <div class="layui-input-block">
+                        <input type="password" name="password" lay-verify="password" placeholder="请输入密码" autocomplete="off" class="layui-input" style="width:150px;">
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">姓名</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="name" lay-verify="" placeholder="请输入学生姓名" autocomplete="off" class="layui-input" style="width:150px;">
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">性别</label>
+                    <div class="layui-input-block">
+                        <input type="radio" name="sex" value="男" title="男" checked>
+                        <input type="radio" name="sex" value="女" title="女">
+                    </div>
+                </div>
+
+                <!-- 提交按钮 -->
+                <div class="layui-form-item">
+                    <div class="layui-input-block">
+                        <input type="button" class="layui-btn"  lay-filter="demo1"  value="确定" id="addConfirm">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<script src="./static/student.js" type="text/javascript"></script>
 <%--<script src="./static/layui/layui.js" type="text/javascript" charset="utf-8"></script>--%>
 <!-- 注意：如果你直接复制所有代码到本地，上述js路径需要改成你本地的 -->
 </body>

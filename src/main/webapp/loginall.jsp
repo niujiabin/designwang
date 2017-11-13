@@ -52,14 +52,14 @@ layui.use(['layer', 'form'], function(){
 						        <input type="text" name="username" lay-verify="username" autocomplete="off" placeholder="请输入用户名" class="layui-input" style="width:150px;">
 						      </div>
 					 </div>
-					 
+
 					 <!-- 密码 -->
 				    <div class="layui-form-item">
 				       <label class="layui-form-label">密码</label>
 				       <div class="layui-input-block">
 				       <input type="password" name="password" lay-verify="password" placeholder="请输入密码" autocomplete="off" class="layui-input" style="width:150px;">
 				    </div>
-				    
+
 				    <!-- 登录类型 -->
 					  <div class="layui-form-item">
 					    <label class="layui-form-label">用户类型</label>
