@@ -6,9 +6,9 @@
 <mapper namespace="design.job.dao.StudentDao">
 	<insert id="addStudent" parameterType="design.job.entity.Student" useGeneratedKeys="true" keyProperty="id" >
 		INSERT  INTO
-		student(name)
+		student(name,username,password,sex)
 		VALUES
-		(#{name})
+		(#{name},#{username},#{password},#{sex})
 	</insert>
 
 	<select id="queryAllStudent"  resultType="java.util.Map">

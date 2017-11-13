@@ -24,12 +24,12 @@
     <a class="layui-btn layui-btn-mini" lay-event="edit">编辑</a>
     <a class="layui-btn layui-btn-danger layui-btn-mini" lay-event="del">删除</a>
 </script>
-
-<div class="layui-collapse layui-col-xs12 layui-col-md3 layui-col-md-offset4 " id="sudentinfo"  style="margin-top:200px;border:1px solid #ccc;display: none;">
+<div id="sudentinfo" style="display: none;">
+<div class=""   style="border:1px solid #ccc;">
     <div class="layui-colla-item">
         <h2 class="layui-colla-title">增加学生信息</h2>
         <div class="layui-colla-content layui-show">
-            <form class="layui-form" id="studentInfoForm" method="post">
+            <form class="layui-form" id="studentInfoForm">
                 <!-- 用户名 -->
                 <div class="layui-form-item">
                     <label class="layui-form-label">用户名</label>
@@ -67,6 +67,7 @@
             </form>
         </div>
     </div>
+</div>
 </div>
 <script src="./static/student.js" type="text/javascript"></script>
 <%--<script src="./static/layui/layui.js" type="text/javascript" charset="utf-8"></script>--%>

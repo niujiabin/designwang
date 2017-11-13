@@ -100,6 +100,8 @@
 
     //主动加载jquery模块
     var $;
+    var table;
+    var form;
 
     layui.use(['element','jquery', 'layer','table','form'], function() {
         $ = layui.$ //重点处

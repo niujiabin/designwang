@@ -2,6 +2,24 @@
 
 
     /**
+     * 确定增加按钮   因为这个按钮是后添加进去的 所以需要绑定
+     */
+    $("#addConfirm").on("click",function () {
+        var postData = $("#studentInfoForm").serialize();
+        var url = path +"/addStudent";
+        $.post(url,postData,function(data){
+            layer.msg('增加学生成功');
+            layer.close(index);
+            //刷新列表   重新渲染列表数据
+            table.reload('student1', {
+                url:path+'/studentList'
+                ,where: {} //设定异步数据接口的额外参数
+                //,height: 300
+            });
+        })
+    });
+
+    /**
      * 添加按钮事件
      */
     $("#addstudent").on("click",function(data){
@@ -9,39 +27,15 @@
         //$("#sudentinfo").show();
         layer.open({
             type: 1,
-            shade: 0.5,
+            shade: 0,
             area: '500px;',
-            content: $("#sudentinfo").html(), //数组第二项即吸附元素选择器或者DOM
-           /* cancel: function(){
-                layer.msg('捕获就是从页面已经存在的元素上，包裹layer的结构', {time: 5000, icon:6});
-            }
-*/
+            title:false,
+            content: $("#sudentinfo"), //数组第二项即吸附元素选择器或者DOM
         });
         //重新刷新raido
         form.render();
- /*       var postData="name="+val;
-             $.post("/Design/addStudent",postData,function(data){
-                 layer.msg('增加的科目'+val);
-                 layer.close(index);
-                 //刷新列表   重新渲染列表数据
-                 table.reload('student1', {
-                     url:'/Design/studentList'
-                     ,where: {} //设定异步数据接口的额外参数
-                     //,height: 300
-                 });
-             });*/
      });
 
-    /**
-     * 确定增加按钮
-     */
-    $("#addConfirm").on("click",function () {
-
-        var postData = $("#studentInfoForm").serialize();
-        var url = path +"/addStudent";
-    });
-
-    var table = layui.table;
     //执行渲染
     table.render({
         elem: '#student', //指定原始表格元素选择器（推荐id选择器）
