@@ -16,13 +16,12 @@ public class RecrumentController {
     @Resource
     public RecrementService recrementService;
 
-
     @ResponseBody
     @RequestMapping(value="/addRecrumentInfo",method = RequestMethod.POST)
     public String  addRecrementInfo(Recrument recrument){
         //登录成功 进入主界面
         try {
-            System.out.println(recrument.getJobName());
+            System.out.println("111"+recrument.getJobName());
             recrementService.addRecrementInfo(recrument);
         } catch (Exception e) {
             e.printStackTrace();
