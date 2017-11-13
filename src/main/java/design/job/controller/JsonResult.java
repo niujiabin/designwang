@@ -3,7 +3,7 @@ package design.job.controller;
 import java.util.List;
 import java.util.Map;
 
-//KKKKKKKKKKKKK666777778878
+//KKKKKKKKKKKKK666777
 public class JsonResult {
 
     public String code;
