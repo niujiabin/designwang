@@ -5,6 +5,7 @@ import java.util.Map;
 
 public class JsonResult {
 
+
     public String code;
 
     public String msg;
