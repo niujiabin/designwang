@@ -128,7 +128,7 @@
          * 科目管理
          */
         $("#editSubject").on("click",function(){
-            $.post(path+"/editStudent","random="+Math.random(),function(data){
+            $.post(path+"/editSubject","random="+Math.random(),function(data){
                 $("#mainLoadDiv").empty();
                 $("#mainLoadDiv").html(data);
             },"html");
@@ -137,7 +137,7 @@
          * 学生管理
          */
         $("#editStudent").on("click",function(){
-            $.post(path+"/editSubject","random="+Math.random(),function(data){
+            $.post(path+"/editStudent","random="+Math.random(),function(data){
                 $("#mainLoadDiv").empty();
                 $("#mainLoadDiv").html(data);
             },"html");
