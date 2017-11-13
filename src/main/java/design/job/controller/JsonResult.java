@@ -3,6 +3,7 @@ package design.job.controller;
 import java.util.List;
 import java.util.Map;
 
+//KKKKKKKKKKKKK
 public class JsonResult {
 
     public String code;
