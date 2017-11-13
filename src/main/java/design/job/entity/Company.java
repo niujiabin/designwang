@@ -7,6 +7,7 @@ package design.job.entity;
  */
 public class Company {
 
+
 	public int id;
 	
 	public String name;
