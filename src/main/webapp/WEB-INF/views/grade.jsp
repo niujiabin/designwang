@@ -34,33 +34,33 @@
                 <div class="layui-form-item">
                     <label class="layui-form-label">学生号</label>
                     <div class="layui-input-block">
-                        <input type="text" name="username" lay-verify="phone" autocomplete="off" placeholder="请输入学生号" class="layui-input" style="width:150px;">
+                        <input type="text" name="student" id="studentno" lay-verify="phone" autocomplete="off" placeholder="请输入学生号" class="layui-input" style="width:150px;">
                     </div>
                 </div>
                 <!-- 密码 -->
                 <div class="layui-form-item">
                     <label class="layui-form-label">学生姓名</label>
                     <div class="layui-input-block">
-                        <input type="password" name="password" lay-verify="password" placeholder="" autocomplete="off" class="layui-input" style="width:150px;">
+                        <input type="text" name="studentname" id="studentname" lay-verify="password" placeholder="" autocomplete="off" class="layui-input" style="width:150px;">
                     </div>
                 </div>
                 <div class="layui-form-item">
                     <label class="layui-form-label">科目号</label>
                     <div class="layui-input-block">
-                        <input type="text" name="name" lay-verify="" placeholder="请输入科目号" autocomplete="off" class="layui-input" style="width:150px;">
+                        <input type="text" name="subject" id="subjectid" lay-verify="" placeholder="请输入科目号" autocomplete="off" class="layui-input" style="width:150px;">
                     </div>
                 </div>
                 <div class="layui-form-item">
                     <label class="layui-form-label">科目名称</label>
                     <div class="layui-input-block">
-                        <input type="text" name="name" lay-verify="" placeholder="" autocomplete="off" class="layui-input" style="width:150px;">
+                        <input type="text" name="subjectname" id="subjectname" lay-verify="" placeholder="" autocomplete="off" class="layui-input" style="width:150px;">
                     </div>
                 </div>
 
                 <div class="layui-form-item">
                     <label class="layui-form-label">分数</label>
                     <div class="layui-input-block">
-                        <input type="text" name="name" lay-verify="" placeholder="请输入分数" autocomplete="off" class="layui-input" style="width:150px;">
+                        <input type="text" name="score" lay-verify="" placeholder="请输入分数" autocomplete="off" class="layui-input" style="width:150px;">
                     </div>
                 </div>
 

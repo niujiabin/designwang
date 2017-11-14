@@ -20,6 +20,37 @@
     });
 
     /**
+     * 根据id找学生
+     */
+    $("#studentno").on("keyup",function(){
+
+        var postData = "id="+$(this).val();
+        var url = path +"/studentList";
+        $.post(url,postData,function(data){
+            if(data.data.length>0){
+                $("#studentname").val(data.data[0].name);
+            }else{
+                $("#studentname").val("");
+            }
+        });
+
+    });
+
+    $("#subjectid").on("keyup",function(){
+
+        var postData = "id="+$(this).val();
+        var url = path +"/subjectList";
+        $.post(url,postData,function(data){
+            if(data.data.length>0){
+                $("#subjectname").val(data.data[0].name);
+            }else{
+                $("#subjectname").val("");
+            }
+        });
+
+    });
+
+    /**
      * 添加按钮事件
      */
     $("#addgrade").on("click",function(data){
