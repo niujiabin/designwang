@@ -7,7 +7,7 @@ public class Grade {
 
     public int id;
 
-    public int sid;
+    public int student;
 
     public int score;
 
@@ -17,16 +17,17 @@ public class Grade {
         return id;
     }
 
+
     public void setId(int id) {
         this.id = id;
     }
 
-    public int getSid() {
-        return sid;
+    public int getStudent() {
+        return student;
     }
 
-    public void setSid(int sid) {
-        this.sid = sid;
+    public void setStudent(int student) {
+        this.student = student;
     }
 
     public int getScore() {
