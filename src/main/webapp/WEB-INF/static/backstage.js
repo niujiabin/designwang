@@ -14,6 +14,8 @@ $(function(){
             $("#mainLoadDiv").html(data);
         },"html");
     });
+
+
 });
 
 function getRootPath(){
