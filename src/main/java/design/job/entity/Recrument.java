@@ -25,6 +25,17 @@ public class Recrument {
 
     public String companyMainDo;
 
+
+    public String isHandle;
+
+    public String getIsHandle() {
+        return isHandle;
+    }
+
+    public void setIsHandle(String isHandle) {
+        this.isHandle = isHandle;
+    }
+
     public String getCompanyType() {
         return companyType;
     }
