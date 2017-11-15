@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="design.job.dao.GradeDao">
+	<insert id="addGrade" parameterType="design.job.entity.Grade" useGeneratedKeys="true" keyProperty="id" >
+		INSERT  INTO
+		grade(subject,student,score)
+		VALUES
+		(#{subject},#{student},#{score})
+	</insert>
+
+	<select id="queryAllGrade"  resultType="java.util.Map">
+			SELECT
+			student.name as studentname,
+			student.id as studentid,
+			grade.id,
+			grade.score,
+			subject.id as subjectid,
+			subject.name as subjectname
+			FROM
+			grade ,
+			student,
+			subject
+			WHERE
+			grade.subject = subject.id AND
+			grade.student = student.id
+	</select>
+
+<update id="updateGrade"  parameterType="design.job.entity.Grade">
+		update grade
+		<trim prefix="set" suffixOverrides=",">
+			<if test="name!=null">name=#{name},</if>
+			<if test="username!=null">username=#{username},</if>
+			<if test="password!=null">password=#{password},</if>
+		</trim>
+		where id=#{id}
+	</update>
+
+	<delete id="deleteGrade" parameterType="int">
+		delete from grade where id=#{id}
+	</delete>
+</mapper>

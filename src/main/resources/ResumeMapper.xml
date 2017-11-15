@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="design.job.dao.ResumeDao">
+<!--	<insert id="addResume" parameterType="design.job.entity.Resume" useGeneratedKeys="true" keyProperty="id" >
+		INSERT  INTO
+		Resume(name, sex, phoneNum, email, eduBackGround, skills, schoolActivity, hobby, targetStation )
+		VALUES
+		(#{name},#{sex},#{phoneNum},#{email},#{eduBackGround},#{skills},#{schoolActivity},#{hobby},#{targetStation})
+	</insert>-->
+	
+<!--	<select id="queryAllResume"  resultType="java.util.Map">
+		select * from Resume
+		<where>
+			<if test="id != null">
+				id = #{id}
+			</if>
+
+		</where>
+
+	</select>-->
+<!--
+<update id="updateResume"  parameterType="design.job.entity.Resume">
+		update Resume
+		<trim prefix="set" suffixOverrides=",">
+
+		</trim>
+		where id=#{id}
+	</update>-->
+
+<!--	<delete id="deleteResume" parameterType="int">
+		delete from Resume where id=#{id}
+	</delete>-->
+</mapper>

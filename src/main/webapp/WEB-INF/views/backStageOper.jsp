@@ -59,8 +59,8 @@
                     <a class="" href="javascript:;">企业招聘</a>
                     <dl class="layui-nav-child">
                         <dd><a href="javascript:;" id="pushRecrus">发布招聘</a></dd>
-                        <dd><a href="javascript:;" id="">招聘信息反馈</a></dd>
-                        <dd><a href="javascript:;" id="editresume">简历管理</a></dd>
+                        <dd><a href="javascript:;" id="editRecrument">招聘信息反馈</a></dd>
+                        <dd><a href="javascript:;">简历管理</a></dd>
                     </dl>
                 </li>
                 <li class="layui-nav-item">
@@ -69,15 +69,15 @@
                         <dd><a href="javascript:;">审核招聘信息</a></dd>
                         <dd><a href="javascript:;" id="editSubject">科目管理</a></dd>
                         <dd><a href="javascript:;" id="editStudent">学生管理</a></dd>
-                        <dd><a href="javascript:;">成绩管理</a></dd>
+                        <dd><a href="javascript:;" id="editGrade">成绩管理</a></dd>
                         <dd><a href="javascript:;">就业分析</a></dd>
                     </dl>
                 </li>
                 <li class="layui-nav-item">
                     <a href="javascript:;">学生信息管理</a>
                     <dl class="layui-nav-child">
-                        <dd><a href="javascript:;">成绩查询</a></dd>
-                        <dd><a href="javascript:;" id="editresume">简历管理</a></dd>
+                        <dd><a href="javascript:;" id="edit">成绩查询</a></dd>
+                        <dd><a href="javascript:;" id="editResume">简历管理</a></dd>
                         <dd><a href="javascript:;">就业分析</a></dd>
                     </dl>
                 </li>
@@ -143,9 +143,22 @@
             },"html");
         });
 
-        //简历管理
-        $("#editresume").on("click",function(){
-            $.post(path+"/editresume","random="+Math.random(),function(data){
+        /**
+         * 成绩管理
+         */
+        $("#editGrade").on("click",function(){
+            $.post(path+"/editGrade","random="+Math.random(),function(data){
+                $("#mainLoadDiv").empty();
+                $("#mainLoadDiv").html(data);
+            },"html");
+        });
+
+        /**
+         * 简历管理
+         */
+        $("#editResume").on("click",function(){
+            $.post(path+"/editResume","random="+Math.random(),function(data){
+                $("#mainLoadDiv").empty();
                 $("#mainLoadDiv").html(data);
             },"html");
         });

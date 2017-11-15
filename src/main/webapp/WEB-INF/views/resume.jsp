@@ -33,22 +33,9 @@
             <form class="layui-form" id="resumeInfoForm">
                 <!-- 用户名 -->
                 <div class="layui-form-item">
-                    <label class="layui-form-label">用户名</label>
-                    <div class="layui-input-block">
-                        <input type="text" name="username" lay-verify="phone" autocomplete="off" placeholder="请输入用户名" class="layui-input" style="width:150px;">
-                    </div>
-                </div>
-                <!-- 密码 -->
-                <div class="layui-form-item">
-                    <label class="layui-form-label">密码</label>
-                    <div class="layui-input-block">
-                        <input type="password" name="password" lay-verify="password" placeholder="请输入密码" autocomplete="off" class="layui-input" style="width:150px;">
-                    </div>
-                </div>
-                <div class="layui-form-item">
                     <label class="layui-form-label">姓名</label>
                     <div class="layui-input-block">
-                        <input type="text" name="name" lay-verify="" placeholder="请输入简历姓名" autocomplete="off" class="layui-input" style="width:150px;">
+                        <input type="text" name="name" lay-verify="name" autocomplete="off" placeholder="请输入姓名" class="layui-input" style="width:150px;">
                     </div>
                 </div>
                 <div class="layui-form-item">
@@ -58,7 +45,67 @@
                         <input type="radio" name="sex" value="女" title="女">
                     </div>
                 </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">电话</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="name" lay-verify="" placeholder="请输入电话" autocomplete="off" class="layui-input" style="width:150px;">
+                    </div>
+                </div>
+                <!-- 密码 -->
+                <div class="layui-form-item">
+                    <label class="layui-form-label">邮箱</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="name" lay-verify="" placeholder="请输入邮箱" autocomplete="off" class="layui-input" style="width:150px;">
+                    </div>
+                </div>
 
+                <!-- 密码 -->
+                <div class="layui-form-item">
+                    <label class="layui-form-label">教育背景</label>
+                    <div class="layui-input-block">
+                        <textarea  name="eduBackGround" lay-verify="" placeholder="请输入教育背景" autocomplete="off" class="layui-input" style="width:300px;">
+
+                        </textarea>
+                    </div>
+                </div>
+                <!-- 密码 -->
+                <div class="layui-form-item">
+                    <label class="layui-form-label">专业技能</label>
+                    <div class="layui-input-block">
+                        <textarea  name="skills" lay-verify="" placeholder="请输入专业技能" autocomplete="off" class="layui-input" style="width:300px;">
+
+                        </textarea>
+                    </div>
+                </div>
+                <!-- 密码 -->
+                <div class="layui-form-item">
+                    <label class="layui-form-label">在校实践</label>
+                    <div class="layui-input-block">
+                        <textarea  name="schoolActivity" lay-verify="" placeholder="请输入在校时实践内容" autocomplete="off" class="layui-input" style="width:300px;">
+
+                        </textarea>
+                    </div>
+                </div>
+
+                <!-- 密码 -->
+                <div class="layui-form-item">
+                    <label class="layui-form-label">爱好</label>
+                    <div class="layui-input-block">
+                        <textarea  name="hobby" lay-verify="" placeholder="请输入爱好" autocomplete="off" class="layui-input" style="width:300px;">
+
+                        </textarea>
+                    </div>
+                </div>
+
+                <!-- 密码 -->
+                <div class="layui-form-item">
+                    <label class="layui-form-label">目标岗位</label>
+                    <div class="layui-input-block">
+                        <textarea  name="targetStation" lay-verify="" placeholder="请输入目标岗位" autocomplete="off" class="layui-input" style="width:300px;">
+
+                        </textarea>
+                    </div>
+                </div>
                 <!-- 提交按钮 -->
                 <div class="layui-form-item">
                     <div class="layui-input-block">
