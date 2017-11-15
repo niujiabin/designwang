@@ -17,8 +17,8 @@ public class ResumeController {
     @Resource
     public ResumeService resumeService;
 
-    @RequestMapping(value = "/editresume")
-    public String editresume(){
+    @RequestMapping(value = "/editResume")
+    public String editResume(){
         return "resume";
     }
 
@@ -55,6 +55,7 @@ public class ResumeController {
     @ResponseBody
     @RequestMapping(value="/addresume",method = RequestMethod.POST)
     public String addresume(Resume resume){
+        System.out.println(resume.getName()+"nmae");
         this.resumeService.addresume(resume);
         return "success";
     }

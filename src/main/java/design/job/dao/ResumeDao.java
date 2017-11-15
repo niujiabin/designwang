@@ -17,9 +17,13 @@ public interface ResumeDao {
             ") values (#{name},#{sex},#{phoneNum},#{email},#{eduBackGround},#{skills},#{schoolActivity},#{hobby},#{targetStation})"})
     public void addResume(Resume resume);
 
+    @Select({"select ", SELECT_FIELDS, " from ", TABLE_NAME, " "})
     List<Map<String,Object>> getAllResume();
 
+    @Update({"update ", TABLE_NAME, " set name=#{name},sex=#{sex},phoneNum=#{phoneNum},email=#{email},eduBackGround=#{eduBackGround}," +
+            "skills=#{skills},schoolActivity=#{schoolActivity},hobby=#{hobby},targetStation=#{targetStation} where id=#{id}"})
     void updateResume(Resume resume);
 
+    @Delete({"delete from ", TABLE_NAME, " where id=#{id}"})
     void deleteResume(Resume resume);
 }
