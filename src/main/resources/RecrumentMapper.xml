@@ -6,9 +6,9 @@
 <mapper namespace="design.job.dao.RecrementDao">
 	<insert id="addRecrumentInfo" parameterType="design.job.entity.Recrument" useGeneratedKeys="true" keyProperty="id" >
 		INSERT  INTO
-		Recrument(jobName,companyName,jobInfo,jobType,person,workplace,companyBig,companyType,companyMainDo)
+		Recrument(jobName,companyName,jobInfo,jobType,person,workplace,companyBig,companyType,companyMainDo,isHandle)
 		VALUES
-		(#{jobName},#{companyName},#{jobInfo},#{jobType},#{person},#{workplace},#{companyBig},#{companyType},#{companyMainDo})
+		(#{jobName},#{companyName},#{jobInfo},#{jobType},#{person},#{workplace},#{companyBig},#{companyType},#{companyMainDo},'否')
 	</insert>
 
 	<select id="getAllRecrument"  resultType="java.util.Map">
