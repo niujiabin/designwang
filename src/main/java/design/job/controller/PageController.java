@@ -41,6 +41,11 @@ public class PageController {
         return "pushRecrument";
     }
 
+    @RequestMapping("/checkRecrument")
+    public String checkPushRecrument(){
+        return "checkPushRecrument";
+    }
+
 
 
 /*    @ResponseBody

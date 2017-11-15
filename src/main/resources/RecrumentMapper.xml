@@ -27,6 +27,7 @@
 			<if test="person!=null">person=#{person},</if>
 			<if test="workplace!=null">workplace=#{workplace},</if>
 			<if test="companyMainDo!=null">companyMainDo=#{companyMainDo},</if>
+			<if test="isHandle!=null">isHandle=#{isHandle},</if>
 		</trim>
 		where id=#{id}
 	</update>

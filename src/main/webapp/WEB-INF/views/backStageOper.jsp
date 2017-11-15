@@ -66,7 +66,7 @@
                 <li class="layui-nav-item">
                     <a href="javascript:;">学校信息管理</a>
                     <dl class="layui-nav-child">
-                        <dd><a href="javascript:;">审核招聘信息</a></dd>
+                        <dd><a href="javascript:;" id="checkPushRecrument">审核招聘信息</a></dd>
                         <dd><a href="javascript:;" id="editSubject">科目管理</a></dd>
                         <dd><a href="javascript:;" id="editStudent">学生管理</a></dd>
                         <dd><a href="javascript:;" id="editGrade">成绩管理</a></dd>
@@ -162,6 +162,13 @@
                 $("#mainLoadDiv").html(data);
             },"html");
         });
+
+        $("#checkPushRecrument").on("click",function(){
+            $.post(path+"/checkRecrument","random="+Math.random(),function(data){
+                $("#mainLoadDiv").html(data);
+            },"html");
+        });
+
     });
     function getRootPath(){
         var strPath = window.location.pathname;
