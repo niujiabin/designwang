@@ -1,6 +1,7 @@
 package design.job.dao;
 
 import design.job.entity.Subject;
+import org.apache.ibatis.annotations.Select;
 
 import java.util.List;
 import java.util.Map;
@@ -24,6 +25,7 @@ public interface SubjectDao {
      * @param subject
      * @return
      */
+
     List<Map<String,Object>> queryAllSubject(Subject subject);
 
     /**

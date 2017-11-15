@@ -16,11 +16,11 @@
     <!-- 注意：如果你直接复制所有代码到本地，上述css路径需要改成你本地的 -->
 </head>
 <body>
-<table class="layui-table" id="student" <%--lay-data="{height:313, url:'/Design/recrumentList', page:true, id:'test3'}"--%> lay-filter="student1">
+<table class="layui-table" id="resume" <%--lay-data="{height:313, url:'/Design/recrumentList', page:true, id:'test3'}"--%> lay-filter="resume1">
 
 </table>
-<button class="layui-btn layui-btn-normal" id="addstudent">增加学生</button>
-<script type="text/html" id="studentbar">
+<button class="layui-btn layui-btn-normal" id="addresume">增加简历</button>
+<script type="text/html" id="resumebar">
     <a class="layui-btn layui-btn-mini" lay-event="detail">查看</a>
     <a class="layui-btn layui-btn-mini" lay-event="edit">编辑</a>
     <a class="layui-btn layui-btn-danger layui-btn-mini" lay-event="del">删除</a>
@@ -28,9 +28,9 @@
 <div id="sudentinfo" style="display: none;">
 <div class=""   style="border:1px solid #ccc;">
     <div class="layui-colla-item">
-        <h2 class="layui-colla-title">增加学生信息</h2>
+        <h2 class="layui-colla-title">增加简历信息</h2>
         <div class="layui-colla-content layui-show">
-            <form class="layui-form" id="studentInfoForm">
+            <form class="layui-form" id="resumeInfoForm">
                 <!-- 用户名 -->
                 <div class="layui-form-item">
                     <label class="layui-form-label">用户名</label>
@@ -48,7 +48,7 @@
                 <div class="layui-form-item">
                     <label class="layui-form-label">姓名</label>
                     <div class="layui-input-block">
-                        <input type="text" name="name" lay-verify="" placeholder="请输入学生姓名" autocomplete="off" class="layui-input" style="width:150px;">
+                        <input type="text" name="name" lay-verify="" placeholder="请输入简历姓名" autocomplete="off" class="layui-input" style="width:150px;">
                     </div>
                 </div>
                 <div class="layui-form-item">
@@ -70,7 +70,7 @@
     </div>
 </div>
 </div>
-<script src="./static/student.js" type="text/javascript"></script>
+<script src="./static/resume.js" type="text/javascript"></script>
 <%--<script src="./static/layui/layui.js" type="text/javascript" charset="utf-8"></script>--%>
 <!-- 注意：如果你直接复制所有代码到本地，上述js路径需要改成你本地的 -->
 </body>

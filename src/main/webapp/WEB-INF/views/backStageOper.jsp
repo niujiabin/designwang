@@ -59,8 +59,8 @@
                     <a class="" href="javascript:;">企业招聘</a>
                     <dl class="layui-nav-child">
                         <dd><a href="javascript:;" id="pushRecrus">发布招聘</a></dd>
-                        <dd><a href="javascript:;" id="editRecrument">招聘信息反馈</a></dd>
-                        <dd><a href="javascript:;">简历管理</a></dd>
+                        <dd><a href="javascript:;" id="">招聘信息反馈</a></dd>
+                        <dd><a href="javascript:;" id="editresume">简历管理</a></dd>
                     </dl>
                 </li>
                 <li class="layui-nav-item">
@@ -77,7 +77,7 @@
                     <a href="javascript:;">学生信息管理</a>
                     <dl class="layui-nav-child">
                         <dd><a href="javascript:;">成绩查询</a></dd>
-                        <dd><a href="javascript:;">简历管理类</a></dd>
+                        <dd><a href="javascript:;" id="editresume">简历管理</a></dd>
                         <dd><a href="javascript:;">就业分析</a></dd>
                     </dl>
                 </li>
@@ -143,6 +143,12 @@
             },"html");
         });
 
+        //简历管理
+        $("#editresume").on("click",function(){
+            $.post(path+"/editresume","random="+Math.random(),function(data){
+                $("#mainLoadDiv").html(data);
+            },"html");
+        });
     });
     function getRootPath(){
         var strPath = window.location.pathname;
