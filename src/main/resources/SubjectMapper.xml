@@ -11,18 +11,13 @@
 		(#{name})
 	</insert>
 
-	<select id="queryAllSubject"  resultType="java.util.Map">
-		select * from subject
+	<select id="queryAllSubject" parameterType="design.job.entity.Subject" resultType="java.util.Map">
+		select id as id ,name as name from subject
 		<where>
-			<if test="id != null">
-				id = #{id}
+			<if test="id!=null and id!=0">
+				and id = #{id}
 			</if>
-			<if test="name != null">
-				and name LIKE CONCAT('%', CONCAT(#{name}, '%'))
-			</if>
-
 		</where>
-
 	</select>
 
 <update id="updateSubject"  parameterType="design.job.entity.Subject">
