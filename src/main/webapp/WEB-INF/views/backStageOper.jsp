@@ -76,7 +76,7 @@
                 <li class="layui-nav-item">
                     <a href="javascript:;">学生信息管理</a>
                     <dl class="layui-nav-child">
-                        <dd><a href="javascript:;" id="edit">成绩查询</a></dd>
+                        <dd><a href="javascript:;" id="gradequery">成绩查询</a></dd>
                         <dd><a href="javascript:;" id="editResume">简历管理</a></dd>
                         <dd><a href="javascript:;">就业分析</a></dd>
                     </dl>
@@ -165,6 +165,15 @@
 
         $("#checkPushRecrument").on("click",function(){
             $.post(path+"/checkRecrument","random="+Math.random(),function(data){
+                $("#mainLoadDiv").html(data);
+            },"html");
+        });
+
+        /**
+         * 成绩查询
+         */
+        $("#gradequery").on("click",function(){
+            $.post(path+"/gradequery","random="+Math.random(),function(data){
                 $("#mainLoadDiv").html(data);
             },"html");
         });

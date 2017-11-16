@@ -3,6 +3,7 @@ import java.util.List;
 import java.util.Map;
 
 import javax.annotation.Resource;
+import javax.servlet.http.HttpSession;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -27,13 +28,23 @@ public class PageController {
     		@RequestParam("username") String username,
     		@RequestParam("password") String password,
     		@RequestParam("usertype") String usertype,
-    		Model model){
+    		Model model,HttpSession httpSession){
+
+        //studentServiceImpl.queryLoginInfo(username,password,usertype);
+        httpSession.setAttribute("username",username);
+
+
     	//登录成功 进入主界面
     	return "main";
     }
     //进入到最终后台主界面
     @RequestMapping("/goBackStage")
-    public String goBackStage(){
+    public String goBackStage(@RequestParam("username") String username,
+                              @RequestParam("password") String password,
+                              @RequestParam("usertype") String usertype,
+                              Model model,HttpSession httpSession){
+        httpSession.setAttribute("username",username);
+
         return "backStageOper";
     }
     @RequestMapping("/pushRecrument")
@@ -45,7 +56,10 @@ public class PageController {
     public String checkPushRecrument(){
         return "checkPushRecrument";
     }
-
+    @RequestMapping("/gradequery")
+    public String gradequery(){
+        return "gradequery";
+    }
 
 
 /*    @ResponseBody

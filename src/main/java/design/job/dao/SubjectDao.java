@@ -2,10 +2,12 @@ package design.job.dao;
 
 import design.job.entity.Subject;
 import org.apache.ibatis.annotations.Select;
+import org.mybatis.spring.annotation.MapperScan;
 
 import java.util.List;
 import java.util.Map;
 
+@MapperScan
 public interface SubjectDao {
 
     /**

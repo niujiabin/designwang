@@ -71,19 +71,22 @@
     table.render({
         elem: '#grade', //指定原始表格元素选择器（推荐id选择器）
         url:path+'/gradeList',
+        method:'post',
+        where:{
+            usertype:"student"
+        },
         page:true,
         id:'grade1',
         height: 500, //容器高度
-        method: 'post',
         // ,cols: [[{field:'id',field:'jobName'}]] //设置表头
         cols:  [[ //标题栏
             //{edit:'test3'},
             {field: 'id', title: 'ID', width: 80}
-            ,{field: 'subjectid', title: '成绩编号', width: 200,edit:true}
-            ,{field: 'subjectname', title: '科目名称', width: 200,edit:true}
-            ,{field: 'score', title: '分数', width: 200,edit:true}
-            ,{field: 'studentid', title: '学生编号', width: 200,edit:true}
-            ,{field: 'studentname', title: '学生姓名', width: 200,edit:true}
+            ,{field: 'subjectid', title: '成绩编号', width: 200}
+            ,{field: 'subjectname', title: '科目名称', width: 200}
+            ,{field: 'score', title: '分数', width: 200}
+            ,{field: 'studentid', title: '学生编号', width: 200}
+            ,{field: 'studentname', title: '学生姓名', width: 200}
             ,{fixed: 'right', width:150, align:'center', toolbar: '#gradebar'} //这里的toolbar值是模板元素的选择器
         ]]
     });

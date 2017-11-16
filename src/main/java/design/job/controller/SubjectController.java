@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.annotation.Resource;
+import javax.servlet.http.HttpSession;
 import java.util.List;
 import java.util.Map;
 
@@ -25,8 +26,9 @@ public class SubjectController {
 
     @ResponseBody
     @RequestMapping(value="/subjectList")
-    public JsonResult subjectList(Subject subject){
+    public JsonResult subjectList(Subject subject,HttpSession session){
 
+        System.out.println(session.getAttribute("username"));
         List<Map<String,Object>> ls =  subjectService.queryAllSubject(subject);
         JsonResult tb = new JsonResult();
         tb.setCode("0");

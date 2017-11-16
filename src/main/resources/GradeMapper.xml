@@ -11,7 +11,7 @@
 		(#{subject},#{student},#{score})
 	</insert>
 
-	<select id="queryAllGrade"  resultType="java.util.Map">
+	<select id="queryAllGrade" parameterType="design.job.entity.Grade"  resultType="java.util.Map">
 			SELECT
 			student.name as studentname,
 			student.id as studentid,
@@ -26,6 +26,9 @@
 			WHERE
 			grade.subject = subject.id AND
 			grade.student = student.id
+			<if test="student!=null and student!=0">
+				and grade.student=#{student}
+			</if>
 	</select>
 
 <update id="updateGrade"  parameterType="design.job.entity.Grade">

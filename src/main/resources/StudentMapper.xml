@@ -18,7 +18,7 @@
 				id = #{id}
 			</if>
 			<if test="username != null">
-				and username LIKE CONCAT('%', CONCAT(#{username}, '%'))
+				and username = #{username}
 			</if>
 
 		</where>
