@@ -36,7 +36,7 @@ public class GradeController {
         if (usertype!=null && usertype.equals("student")){
             String username = (String)session.getAttribute("username");
             Student student = new Student();
-            student.setName(username);
+            student.setUsername(username);
             List<Map<String,Object>> ls1 = studentService.queryAllStudent(student);
             grade.setStudent(Integer.valueOf(String.valueOf(ls1.get(0).get("id"))));
         }

@@ -14,6 +14,10 @@ public class Company {
 	
 	public String address;
 
+	public String username;
+
+	public String password;
+
 	public int getId() {
 		return id;
 	}

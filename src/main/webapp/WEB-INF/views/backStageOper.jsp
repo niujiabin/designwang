@@ -78,6 +78,7 @@
                     <dl class="layui-nav-child">
                         <dd><a href="javascript:;" id="gradequery">成绩查询</a></dd>
                         <dd><a href="javascript:;" id="editResume">简历管理</a></dd>
+                        <dd><a href="javascript:;" id="question">问题咨询</a></dd>
                         <dd><a href="javascript:;">就业分析</a></dd>
                     </dl>
                 </li>
@@ -103,12 +104,12 @@
     var table;
     var form;
 
+
     layui.use(['element','jquery', 'layer','table','form'], function() {
         $ = layui.$ //重点处
             , layer = layui.layer,
             table = layui.table,
             form = layui.form;
-
         //var form = layui.form;
 
         $("#pushRecrus").on("click",function(){
@@ -178,6 +179,14 @@
             },"html");
         });
 
+        /**
+         * 咨询
+         */
+        $("#question").on("click",function(){
+            $.post(path+"/question","random="+Math.random(),function(data){
+                $("#mainLoadDiv").html(data);
+            },"html");
+        });
     });
     function getRootPath(){
         var strPath = window.location.pathname;

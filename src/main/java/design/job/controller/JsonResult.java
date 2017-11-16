@@ -14,6 +14,18 @@ public class JsonResult {
 
     public int count;
 
+    public WSMine mine;
+
+    public WSFriend friend;
+
+    public WSFriend getFriend() {
+        return friend;
+    }
+
+    public void setFriend(WSFriend friend) {
+        this.friend = friend;
+    }
+
     public int getCount() {
         return count;
     }
@@ -44,5 +56,13 @@ public class JsonResult {
 
     public void setData(List<Map<String, Object>> data) {
         this.data = data;
+    }
+
+    public WSMine getMine() {
+        return mine;
+    }
+
+    public void setMine(WSMine mine) {
+        this.mine = mine;
     }
 }

@@ -12,8 +12,8 @@
     http://www.springframework.org/schema/mvc/spring-mvc-4.3.xsd
     ">  
     <!-- 默认扫描的包路径 -->  
-    <context:component-scan base-package="design.job.controller" />  
-  
+    <context:component-scan base-package="design.job.*" />
+    <mvc:default-servlet-handler/>
     <!-- 添加注解驱动 -->  
     <mvc:annotation-driven />  
   

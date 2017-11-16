@@ -60,7 +60,10 @@ public class PageController {
     public String gradequery(){
         return "gradequery";
     }
-
+    @RequestMapping("/question")
+    public String question(){
+        return "question";
+    }
 
 /*    @ResponseBody
     @RequestMapping("/queryAllStudent")
