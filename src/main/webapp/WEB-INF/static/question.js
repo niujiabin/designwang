@@ -23,17 +23,12 @@ layui.use('layim', function(layim){
             ,data: {} //额外参数
         }
 
-    }).chat({
-        name: '客服姐姐'
-        ,type: 'friend'
-        ,avatar: 'http://tp1.sinaimg.cn/5619439268/180/40030060651/1'
-        ,id: -2
     });
 
     var socket = new WebSocket('ws://localhost:8080/'+getRootPath()+'/echo.ws');
 
     //发送一个消息
-    //socket.send('Hi Server, I am LayIM!');
+   // socket.send('Hi Server, I am LayIM!');
    // codelayui.code
 //更多情况下，一般是传递一个JSON
    /* socket.send(JSON.stringify({
@@ -42,6 +37,7 @@ layui.use('layim', function(layim){
     }));*/
     //连接成功时触发
     socket.onopen = function(){
+        alert("ok");
         socket.send('XXX连接成功');
     };
 
