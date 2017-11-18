@@ -37,8 +37,7 @@ layui.use('layim', function(layim){
     }));*/
     //连接成功时触发
     socket.onopen = function(){
-        alert("ok");
-        socket.send('XXX连接成功');
+        //socket.send('XXX连接成功');
     };
 
     //监听收到的消息
