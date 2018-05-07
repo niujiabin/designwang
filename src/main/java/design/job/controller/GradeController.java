@@ -1,6 +1,7 @@
 package design.job.controller;
 
 import design.job.entity.Grade;
+import design.job.entity.MySQLSetting;
 import design.job.entity.Student;
 import design.job.service.GradeService;
 import design.job.service.StudentService;
@@ -50,6 +51,21 @@ public class GradeController {
         return  tb;
     }
 
+
+    @ResponseBody
+    @RequestMapping(value="/gradeListNoReturn")
+    public String gradeListNoReturn(@RequestParam(value="usertype",required = false) String usertype, HttpSession session, MySQLSetting ms){
+        gradeService.queryAllGradeAndResetMySQL(ms);
+        return  "success";
+    }
+
+    @ResponseBody
+    @RequestMapping(value="/gradeUpdateSetting")
+    public String gradeUpdateSetting(@RequestParam(value="usertype",required = false) String usertype, HttpSession session, MySQLSetting ms){
+        gradeService.gradeAndResetMySQL(ms);
+        return  "success";
+    }
+
     /**
      * update grade
      * @param grade
@@ -72,6 +88,14 @@ public class GradeController {
         this.gradeService.addGrade(grade);
         return "success";
     }
+
+    @ResponseBody
+    @RequestMapping(value="/addGradeTest")
+    public String addGradeTest(Grade grade){
+        this.gradeService.addGradeTest(grade);
+        return "success";
+    }
+
     @ResponseBody
     @RequestMapping(value="/deleteGrade",method = RequestMethod.POST)
     public String deleteGrade(Grade grade){
