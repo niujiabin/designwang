@@ -56,6 +56,7 @@ public class PageController {
     }
     @RequestMapping("/pushRecrument")
     public String pushRecrument(){
+        System.out.println(1222);
         return "pushRecrument";
     }
 
@@ -63,10 +64,18 @@ public class PageController {
     public String checkPushRecrument(){
         return "checkPushRecrument";
     }
+
+    @RequestMapping("/ana")
+    public String ana(){
+        return "analyse";
+    }
+
+
     @RequestMapping("/gradequery")
     public String gradequery(){
         return "gradequery";
     }
+
     @RequestMapping("/question")
     public String question(){
         return "question";

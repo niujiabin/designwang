@@ -1,6 +1,7 @@
 package design.job.dao;
 
 import design.job.entity.Grade;
+import design.job.entity.MySQLSetting;
 import org.mybatis.spring.annotation.MapperScan;
 
 import java.util.List;
@@ -33,4 +34,13 @@ public interface GradeDao {
 	 * @param grade
 	 */
 	void updateGrade(Grade grade);
+
+    List<Map<String,Object>> queryAllGradeAndResetMySQL(MySQLSetting ms);
+
+
+	void updateMySQLSettingMax_connections(Integer max_connections);
+
+	void updateMySQLSettingQuery_cache_size(Long query_cache_size);
+
+	void addGradeTest(List<Grade> list);
 }
